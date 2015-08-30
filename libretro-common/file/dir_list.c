@@ -196,10 +196,10 @@ static int parse_dir_entry(const char *name, char *file_path,
 
 /**
  * dir_list_new:
- * @dir          : directory path.
- * @ext          : allowed extensions of file directory entries to include.
- * @include_dirs : include directories as part of the finished directory listing?
- * @strict_ext   : Only include files which match ext. Do not try to match compressed files, etc.
+ * @dir                : directory path.
+ * @ext                : allowed extensions of file directory entries to include.
+ * @include_dirs       : include directories as part of the finished directory listing?
+ * @include_compressed : Include compressed files, even if not part of ext.
  *
  * Create a directory listing.
  *
